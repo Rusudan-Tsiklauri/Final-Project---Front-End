@@ -1,0 +1,130 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px;
+    margin: 0; 
+}
+
+.margin-inline {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    border-radius: 8px;
+    padding: 40px;
+ }
+
+       
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+ .logo {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+nav a {
+    color: #999999;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+ }
+nav a.active {
+    color: #ffffff;
+}
+
+ .tickets {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ff2a2a;
+    padding-bottom: 4px;
+        }
+
+     
+ .grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr; 
+    gap: 50px;
+}
+
+   
+.big-poster img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #222;
+ }
+
+      
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.small-posters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.small-posters img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #222;
+}
+
+.info-block {
+    margin-top: 30px;
+}
+
+.tagline {
+    color: #ff2a2a;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;        
+}
+.title {
+    font-size: 45px;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+    letter-spacing: 1px;
+}
+
+.description {
+    color: #999999;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.stars {
+    color: #ffb400;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.stars span {
+    color: #ffffff;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.stars span em {
+    color: #666666;
+    font-style: normal;
+}
+        
