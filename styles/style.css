@@ -1,8 +1,14 @@
 body {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #000000 !important;
+    color: #ffffff !important;
     padding: 40px;
     margin: 0; 
+}
+.uppercase-nav {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .margin-inline {
@@ -127,4 +133,3 @@ nav a.active {
     color: #666666;
     font-style: normal;
 }
-        
