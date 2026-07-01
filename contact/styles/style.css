@@ -1,0 +1,146 @@
+body {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    padding: 40px;
+    margin: 0; 
+}
+
+.uppercase-nav {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.margin-inline {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    border-radius: 8px;
+    padding: 40px;
+ }
+
+    
+ .logo {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+nav a {
+    color: #999999;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+ }
+nav a.active {
+    color: #ffffff;
+}
+
+ .tickets {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ff2a2a;
+    padding-bottom: 4px;
+}
+
+
+.contact-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.contact-title {
+    color: #ff2a2a;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.intro {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+
+.section-title {
+    color: #ff2a2a;
+    margin-top: 30px;
+}
+
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    background: #111;
+    padding: 10px;
+    margin: 8px 0;
+    border-left: 4px solid #ff2a2a;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+form input,
+.form textarea {
+    background: #111;
+    border: 1px solid #333;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.form input:focus,
+.form textarea:focus {
+    border-color: #ff2a2a;
+    outline: none;
+}
+
+
+.form button {
+    background: #ff2a2a;
+    color: black;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.form button:hover {
+    background: white;
+    color: black;
+}
+.contact-container {
+    animation: fadeIn 0.8s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
