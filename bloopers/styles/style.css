@@ -4,7 +4,6 @@ body {
     padding: 40px;
     margin: 0; 
 }
-
 .uppercase-nav {
     text-transform: uppercase;
     font-size: 14px;
@@ -20,9 +19,7 @@ body {
     border-radius: 8px;
     padding: 40px;
  }
-
-    
- .logo {
+.logo {
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -39,7 +36,7 @@ nav a.active {
     color: #ffffff;
 }
 
- .tickets {
+.tickets {
     color: #ffffff;
     text-decoration: none;
     font-size: 14px;
@@ -49,38 +46,18 @@ nav a.active {
     padding-bottom: 4px;
 }
 
-.about-page {
-    max-width: 750px;
-    margin: 40px auto;
+.bloopers-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;            
+    flex-wrap: wrap;        
+    padding: 20px;
+}
+.blooper-card {
     text-align: center;
-    border-radius: 12px;      
-    border: 1px solid #ff2a2a;
-    background-color: #111111; 
-    padding: 40px;
-    animation: fadeIn 0.8s ease-in-out;
 }
-.about-page p{
-    font-family: "BPG Mikheil Stefane", sans-serif;
-    font-size: 18px;
-}
-
-.about-title {
-    color: #ff2a2a;
-    font-size: 42px;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
-}
-
-.about-text {
-    color: #999999;
-    font-size: 16px;
-    line-height: 1.8;
-    margin-bottom: 20px; 
-    margin-left: 20px;
-    margin-right: 20px; 
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+.blooper-card h2{
+     font-family: "Yuyu Short", sans-serif;
+     font-size: 60px;
 }
