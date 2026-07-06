@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
 body {
     background-color: #000000 !important;
     color: #ffffff !important;
@@ -13,15 +20,23 @@ nav a {
     text-transform: uppercase;
  }
 .fan-intro{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content:space-between;
-    align-items:stretch;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
+    -webkit-box-align:stretch;
+        -ms-flex-align:stretch;
+            align-items:stretch;
     gap:40px;
     margin:70px auto;
 }
 
 .intro-text{
-    flex:2;
+    -webkit-box-flex:2;
+        -ms-flex:2;
+            flex:2;
     background:#111;
     border:1px solid #651313;
     padding:35px;
@@ -37,13 +52,17 @@ nav a {
 .cards-title{
     color:#d43a3a;
     margin-top: 20px;
-    flex:2;
+    -webkit-box-flex:2;
+        -ms-flex:2;
+            flex:2;
     background:#111;
     text-align: center;
     padding:35px;
 }
 .cards{
+    display:-ms-grid;
     display:grid;
+    -ms-grid-columns:1fr 25px 1fr 25px 1fr;
     grid-template-columns:repeat(3,1fr);
     gap:25px;
     margin-top:25px;
@@ -53,6 +72,7 @@ nav a {
     background:#111 !important;
     border:1px solid #5c1919;
     padding:30px;
+    -webkit-transition:.35s;
     transition:.35s;
    
     position:relative;
@@ -68,9 +88,12 @@ nav a {
     top:0;
 }
 .card:hover{
-    transform:translateY(-8px);
+    -webkit-transform:translateY(-8px);
+        -ms-transform:translateY(-8px);
+            transform:translateY(-8px);
     border-color:#d23b3b;
-    box-shadow:0 0 25px #aa000040;
+    -webkit-box-shadow:0 0 25px #aa000040;
+            box-shadow:0 0 25px #aa000040;
 }
 .card h3{
     color:#d43a3a;
@@ -117,6 +140,26 @@ nav a {
     width: 100%;
 }
 
+.form input::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder {
+    color: #666;
+    font-family: "BPG Mikheil Stefane", sans-serif;
+}
+
+.form input::-moz-placeholder, .form textarea::-moz-placeholder {
+    color: #666;
+    font-family: "BPG Mikheil Stefane", sans-serif;
+}
+
+.form input:-ms-input-placeholder, .form textarea:-ms-input-placeholder {
+    color: #666;
+    font-family: "BPG Mikheil Stefane", sans-serif;
+}
+
+.form input::-ms-input-placeholder, .form textarea::-ms-input-placeholder {
+    color: #666;
+    font-family: "BPG Mikheil Stefane", sans-serif;
+}
+
 .form input::placeholder,
 .form textarea::placeholder {
     color: #666;
@@ -127,7 +170,8 @@ nav a {
 .form select:focus,
 .form textarea:focus {
     border-color: #ff2a2a;
-    box-shadow: 0 0 10px #ff2a2a40;
+    -webkit-box-shadow: 0 0 10px #ff2a2a40;
+            box-shadow: 0 0 10px #ff2a2a40;
     outline: none;
 }
 

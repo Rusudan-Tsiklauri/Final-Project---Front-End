@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
 body {
     background-color: #000000 !important;
     color: #ffffff !important;
@@ -39,6 +46,7 @@ nav a {
 
 
 .photo-grid {
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
@@ -57,10 +65,15 @@ nav a {
 .pic {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
-  filter: grayscale(30%) sepia(20%);
+  -webkit-filter: grayscale(30%) sepia(20%);
+          filter: grayscale(30%) sepia(20%);
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
   transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
 
 .photo-overlay {
@@ -68,11 +81,17 @@ nav a {
   bottom: 0;
   left: 0;
   width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, rgba(0, 0, 0, 0.9)));
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.9) 70%);
   padding: 30px 20px 20px 20px;
   opacity: 0;
-  transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
   transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .photo-overlay h3 {
@@ -90,12 +109,16 @@ nav a {
 
 
 .photo-card:hover .pic {
-  transform: scale(1.05); 
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05); 
 }
 
 .photo-card:hover .photo-overlay {
   opacity: 1;
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .back-link {
@@ -108,6 +131,7 @@ nav a {
   border: 1px solid #333;
   padding: 12px 24px;
   border-radius: 4px;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
